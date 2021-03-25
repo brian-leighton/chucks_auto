@@ -1,0 +1,22 @@
+{
+  "name": "chucks_auto",
+  "version": "1.0.0",
+  "description": "Website for Chucks Auto Service Hamilton, Ont",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "nodemon": "^2.0.7",
+    "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
