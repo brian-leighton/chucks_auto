@@ -1,0 +1,284 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul {
+  list-style: none;
+}
+
+@media (max-width: 900px) {
+  .header {
+    display: block !important;
+  }
+}
+
+div.company, .company {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 4.5rem;
+  color: #C80928;
+  padding: 0 2rem;
+  font-weight: 500;
+  background: #f2f2f2;
+  border-bottom: 3px solid #C80928;
+  letter-spacing: 0.5px;
+}
+@media (max-width: 65em) {
+  div.company, .company {
+    border-bottom: none;
+  }
+}
+@media (max-width: 28em) {
+  div.company, .company {
+    font-size: 3.5rem;
+  }
+}
+
+.drop-down {
+  position: relative;
+  cursor: default;
+}
+.drop-down__sub-menu {
+  position: absolute;
+  background: teal;
+  left: -10%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+.drop-down:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+.col-1 {
+  flex: 0 0 8.3333333333%;
+}
+
+.col-2 {
+  flex: 0 0 16.6666666667%;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+}
+
+.col-4 {
+  flex: 0 0 33.3333333333%;
+}
+
+.col-5 {
+  flex: 0 0 41.6666666667%;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+}
+
+.col-7 {
+  flex: 0 0 58.3333333333%;
+}
+
+.col-8 {
+  flex: 0 0 66.6666666667%;
+}
+
+.col-9 {
+  flex: 0 0 75%;
+}
+
+.col-10 {
+  flex: 0 0 83.3333333333%;
+}
+
+.col-11 {
+  flex: 0 0 91.6666666667%;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+}
+
+.flex {
+  flex-wrap: wrap;
+  display: flex;
+}
+.flex--no-wrap {
+  flex-wrap: nowrap;
+}
+.flex__column {
+  flex-direction: column;
+}
+.flex__justify--center {
+  justify-content: center;
+}
+.flex__justify--space-around {
+  justify-content: space-around;
+}
+.flex__justify--space-between {
+  justify-content: space-between;
+}
+
+nav {
+  position: relative;
+}
+
+.nav-list {
+  background: #f2f2f2;
+  border-bottom: 3px solid #C80928;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+@media (max-width: 65em) {
+  .nav-list {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 28em) {
+  .nav-list {
+    visibility: hidden;
+    flex-direction: column;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    border-bottom: none;
+  }
+}
+.nav-list__item {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #56423e;
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  margin-right: 3rem;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+.nav-list__item::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 3px;
+  background: #00cedf;
+  z-index: 100;
+  left: -10%;
+  bottom: -3px;
+}
+@media (max-width: 28em) {
+  .nav-list__item {
+    margin-right: 0;
+  }
+}
+.nav-list a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn__toggle--nav {
+  visibility: hidden;
+}
+@media (max-width: 28em) {
+  .btn__toggle--nav {
+    visibility: visible;
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid #303030;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    background: #fff6f3;
+  }
+}
+
+.hamburger {
+  width: 90%;
+  height: 3px;
+  background: #303030;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+}
+.hamburger::before {
+  content: "";
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #303030;
+  bottom: 6px;
+  transform: rotate(0);
+  transition: all 1s;
+}
+.hamburger::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #303030;
+  bottom: -6px;
+  transform: rotate(0);
+  transition: all 1s;
+  opacity: 1;
+}
+
+.rotate {
+  background: transparent;
+  color: #fff6f3;
+}
+.rotate::before {
+  content: "";
+  bottom: 0;
+  transform: rotate(-135deg);
+  background: #C80928;
+}
+.rotate::after {
+  content: "";
+  bottom: 0;
+  transform: rotate(135deg);
+  opacity: 1;
+  background: #C80928;
+}
+
+@media (max-width: 65em) {
+  header.header, .header {
+    display: block;
+  }
+}
+
+.show {
+  visibility: visible;
+  position: fixed;
+  top: 0;
+}
+.show > ul {
+  border-radius: 50%;
+  width: 200vw;
+  height: 130vh;
+  visibility: visible;
+  background: transparent;
+  justify-content: center;
+  gap: 8rem 0;
+  background: white;
+  position: fixed;
+  left: -50%;
+  top: -15vh;
+  transition: height 1.2s ease, width 1.2s ease;
+}
+.show ul > * {
+  position: relative;
+  z-index: 300;
+}
+
+/*# sourceMappingURL=index.css.map */

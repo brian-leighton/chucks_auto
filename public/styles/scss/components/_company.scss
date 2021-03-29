@@ -1,0 +1,17 @@
+div.company, .company{
+    font-family: $font-heading;
+    font-size: 4.5rem;
+    color: $color-primary;
+    padding: 0 2rem;
+    font-weight: 500;
+    background: $color-grey-light;
+    border-bottom: 3px solid $color-primary;
+    letter-spacing: .5px;
+    @include mq(medium, $custom: false){
+        border-bottom: none;
+    }
+    @include mq(phone, $custom: false){
+        font-size: 3.5rem;
+    }
+}
+

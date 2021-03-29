@@ -4,7 +4,9 @@
   "description": "Website for Chucks Auto Service Hamilton, Ont",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon index.js"
+    "devStart": "concurrently \"npm run start\" \"npm run compile:sass\" ",
+    "compile:sass": "sass --watch public/styles/scss/main.scss public/styles/css/index.css",
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",

@@ -1,0 +1,27 @@
+.drop-down{
+    position: relative;
+    cursor: default;
+    &__sub-menu {
+        position: absolute;
+        background: teal;
+        // width: 120%;
+        left: -10%;
+        // left: -100%;
+        // display: flex;
+        // flex-wrap: wrap;
+        // flex-direction: column;
+        visibility: hidden;
+        // min-width: 15rem;
+        opacity: 0;
+        transition: opacity 1.5s;
+    }
+
+    & li {
+        // color: blue;
+    }
+}
+
+.drop-down:hover > ul {
+    visibility: visible;
+    opacity: 1;
+}

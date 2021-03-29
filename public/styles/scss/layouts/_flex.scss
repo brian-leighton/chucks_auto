@@ -1,0 +1,30 @@
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        flex: 0 0 (100% / (12 / $i) );
+    }
+}
+
+.flex{
+    flex-wrap: wrap;
+    display: flex;
+    
+    &--no-wrap{
+        flex-wrap: nowrap;
+    }
+
+    &__column{
+        flex-direction: column;
+    }
+
+    &__justify{
+        &--center{
+            justify-content: center;
+        }
+        &--space-around{
+            justify-content: space-around;
+        }
+        &--space-between{
+            justify-content: space-between;
+        }
+    }
+}
