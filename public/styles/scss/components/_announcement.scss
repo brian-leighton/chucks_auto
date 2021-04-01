@@ -1,0 +1,18 @@
+.announcement{
+    width: 100vw;
+    min-height: 3rem;
+    background: rgba($color-grey-dark, .4);
+    // position: sticky;
+    position: absolute;
+    top: 0;
+    left: -2.5vw;
+    z-index: 150;
+    font-family: $font-heading;
+    &__message{
+        color: $color-white;
+        font-size: 1.8rem;
+        text-align: center;
+        padding-top: .2rem; 
+
+    }
+}

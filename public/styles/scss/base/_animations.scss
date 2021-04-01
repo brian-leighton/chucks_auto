@@ -1,0 +1,17 @@
+.move-up{
+    // the important is needed because of class ordering from the main scss file to be fixed later
+    top: 1rem !important;
+    transition: top .5s ease-out;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1.0, 1.0); opacity: 1; 
+    }
+    50%{
+        transform: scale(.75, .75); opacity: .5;
+    }
+    100%{
+        transform: scale(1.0, 1.0); opacity: 1;
+    }
+}

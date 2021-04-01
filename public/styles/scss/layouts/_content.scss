@@ -1,0 +1,11 @@
+.content {
+    min-height: 80vh;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    flex-direction: column;
+    // align-items: flex-start;
+    // justify-content: baseline;
+    background: $color-grey-light;
+    gap: 0;
+}

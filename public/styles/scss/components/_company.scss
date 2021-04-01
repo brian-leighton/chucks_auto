@@ -12,6 +12,7 @@ div.company, .company{
     }
     @include mq(phone, $custom: false){
         font-size: 3.5rem;
+        flex: 1 0 100%;
     }
 }
 

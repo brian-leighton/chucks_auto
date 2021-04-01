@@ -1,0 +1,26 @@
+.icon{
+
+    &__social{
+        fill: #1773EA;
+    }
+
+    &__arrow-down{
+        // fill: $color-primary;
+        fill: $color-white;
+        animation: pulse 1.8s ease-out;
+        animation-iteration-count: infinite;
+    }
+
+    &__small{
+        height: 2rem;
+        width: 2rem;
+    }
+    &__medium{
+        height: 3em;
+        width: 3em;
+    }
+
+    &__white{
+        fill: $color-white;
+    }
+}

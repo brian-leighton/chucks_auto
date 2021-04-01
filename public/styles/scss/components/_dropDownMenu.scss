@@ -1,24 +1,39 @@
 .drop-down{
     position: relative;
     cursor: default;
+    font-family: $font-text;
     &__sub-menu {
         position: absolute;
-        background: teal;
-        // width: 120%;
+        // background: teal;
         left: -10%;
-        // left: -100%;
-        // display: flex;
-        // flex-wrap: wrap;
-        // flex-direction: column;
         visibility: hidden;
-        // min-width: 15rem;
         opacity: 0;
         transition: opacity 1.5s;
+
+        @include mq(phone, $custom: false){
+            visibility: visible;
+            opacity: 1;
+            // left: 0;
+            width: 120%;
+            text-align: center;
+            padding-bottom: 5rem;
+        }
+        
+        &--item{
+            font-size: 1.4rem;
+            color: $color-grey-dark;
+            font-weight: 500;
+            text-transform: uppercase;
+            @include mq(phone, $custom: false){
+                color: $color-white;
+            }
+        }
+
+        & > a:first-of-type{
+            margin-top: .85rem;
+        }
     }
 
-    & li {
-        // color: blue;
-    }
 }
 
 .drop-down:hover > ul {

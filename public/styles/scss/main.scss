@@ -4,11 +4,20 @@
 @import "base/base";
 @import "base/variables";
 @import "base/typography";
+@import "base/utilities";
+@import "base/animations";
 
 //COMPONENTS
+@import "components/announcement";
+@import "components/btns";
+@import "components/header";
+@import "components/billboard";
 @import "components/company";
 @import "components/dropDownMenu";
-
+@import "components/icons";
 //LAYOUTS
 @import "layouts/flex";
 @import "layouts/nav";
+@import "layouts/footer";
+@import "layouts/content";
+@import "layouts/history";

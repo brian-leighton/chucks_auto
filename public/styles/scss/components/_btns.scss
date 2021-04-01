@@ -1,0 +1,58 @@
+.btn{
+    &__main{
+        display: flex;
+        padding: 1rem 2rem;
+        border-radius: 3px;
+        color: $color-white;
+        background: $color-tertiary;
+        cursor: pointer;
+        transition: all .3s ease-in;
+        border: 2px solid transparent;
+
+        &:hover{
+            background: mix($color-white, $color-tertiary, 75%);
+            color: $color-tertiary;
+            border: 2px solid $color-tertiary;
+
+            & svg {
+                fill: $color-tertiary;
+                transition: fill 1s ease-out;
+            }
+
+        }
+
+        & > p {
+            font-size: 1.4rem;
+            font-weight: 600;
+            font-family: $font-heading;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        &:not(:last-of-type){
+            margin-right: 2rem
+        }
+
+        &--phone{
+            margin: 2rem 0;
+
+            & > p {
+                padding-top: 0.5rem;
+            }
+
+        }
+        
+    }
+    &__arrow{
+
+        &--down{
+            margin-top: 15rem;
+            background: rgba($color-white, .4);
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

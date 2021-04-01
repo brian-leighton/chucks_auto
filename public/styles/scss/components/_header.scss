@@ -1,0 +1,13 @@
+header.header, .header{ 
+    z-index: 100;
+    // display: inline-block;
+    @include mq(medium, $custom: false){
+        display: block;
+    
+        // min-width: 125rem;
+    }
+
+    @include mq(phone, $custom: false){
+        display: flex;
+    }
+}

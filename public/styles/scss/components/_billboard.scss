@@ -1,0 +1,132 @@
+.billboard{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    // background: $color-grey-dark;
+    background: $color-primary;
+    padding-bottom: 15rem;
+
+    @include mq(small, $custom: false){
+        padding-bottom: 6rem;
+        // background: pink;
+    }
+    & img {
+        width: 100%;
+        height: 100%;
+    
+    }
+    &__cta {
+        background: white;
+        text-align: center;
+        width: 50%;
+        min-width: 34rem;
+        margin: 20rem auto 0 auto;
+        border: 2px solid $color-grey-dark;
+        border-radius: 2px;
+        overflow: hidden;
+
+        @include mq(medium, $custom: false){
+            margin: 10rem auto 0 auto;
+        }
+
+        & h2 {
+            font-family: $font-text;
+        }
+
+        & h1 {
+            padding: 1rem 5rem;
+            font-weight: 400;
+            font-family: $font-text;
+            font-size: 1.9rem;
+        }
+        &--heading{
+            padding: 2rem 2rem;
+            // background: rgba($color-primary, 1);
+            background: $color-grey-dark;
+            // display: inline-block;
+            // width: 100%;
+            color: $color-white;
+        }
+
+        &--btns{
+            // background: chartreuse;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 0 1.3rem;
+            margin-top:2rem; 
+        }
+    }
+
+    &__highlight{
+        background: rgba($color-white, .4);
+        max-width: 90ch;
+        margin-top: 3.5rem;
+        padding-left: 15%;
+        font-size: 1.3rem;
+        font-family: $font-text;
+        & h3 {
+            line-height: 2.5rem;
+            letter-spacing: 1px;
+            color: $color-grey-dark;
+            // color: $color-primary;
+        }
+    }
+
+    &__image{
+        position: absolute;
+        width: 100%;
+        height:100%;
+        max-height: 95vh;
+        display: flex;
+        justify-content: center;
+        // background: mix($color-grey-dark, $color-white, 80%);
+        & > div {
+            width: 75%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+
+            @include mq(medium, $custom: false){
+                width: 90%;
+            }
+            @include mq(small, $custom: false){
+                width: 100%;
+            }
+            &::after{
+
+                content: "";
+                @supports not (backdrop-filter: blur()){
+                    background: linear-gradient(170deg, rgba(48,48,48, .8) 0%, rgba(242,242,242, .6) 81%, rgba(255,246,243, .4) 100%);
+                }
+                backdrop-filter: blur(3px);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+        }
+    }
+
+    &__content{
+        position: relative;
+        margin-top: 4rem;
+        // text-align: center;
+        // z-index: 100
+
+        &--heading{
+            font-family: $font-heading;
+            font-size: 2rem;
+
+            & h1 {
+                font-weight: 300;
+                color: $color-white;
+                padding-left: 15%;
+            }
+
+            & h2 {
+                color: $color-primary;
+                padding-left: 18%;
+            }
+        }
+    }
+}
