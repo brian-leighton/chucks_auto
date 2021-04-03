@@ -24,9 +24,15 @@
             color: $color-grey-dark;
             font-weight: 500;
             text-transform: uppercase;
+            display: inline-block;
             @include mq(phone, $custom: false){
                 color: $color-white;
             }
+        }
+        
+        & a {
+            // background: red;
+            // width: 100%;
         }
 
         & > a:first-of-type{
@@ -39,4 +45,6 @@
 .drop-down:hover > ul {
     visibility: visible;
     opacity: 1;
+    z-index: 1200;
+    background: chartreuse;
 }

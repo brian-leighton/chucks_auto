@@ -7,7 +7,7 @@
     background: $color-grey-dark;
     display: flex;
     flex-wrap: wrap;
-
+    // overflow-x: hidden;
     
     @include mq("1200px", $custom: true){
         // flex: 0 0 20%;
@@ -119,6 +119,10 @@
             font-weight: 500;
             color: $color-grey-light;
             padding: .3rem .6rem;
+
+            @include mq(small, $custom: false){
+                padding: 0;
+            }
             & span {
                 color: $color-primary;
                 margin-right: 1rem;

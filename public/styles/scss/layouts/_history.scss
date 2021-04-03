@@ -1,7 +1,7 @@
 .history{
     width: 100%;
     background: $color-grey-light;
-    padding: 50rem 0;
+    padding: 50rem 0 25rem 0;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -34,6 +34,10 @@
             height: 100%;
             max-height: 38rem;
             min-height: 32rem;
+        }
+
+        & h3 {
+            // text-align: center;
         }
 
         @include mq(small, $custom: false){

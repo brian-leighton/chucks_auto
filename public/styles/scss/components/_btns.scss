@@ -47,10 +47,11 @@
 
         &--down{
             margin-top: 15rem;
-            background: rgba($color-white, .4);
+            // background: rgba($color-white, .4);
             position: absolute;
-            bottom: 0;
+            bottom: -2rem;
             width: 100%;
+            z-index:1200;
             display: flex;
             justify-content: center;
         }

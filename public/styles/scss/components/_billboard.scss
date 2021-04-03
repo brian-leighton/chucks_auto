@@ -20,13 +20,16 @@
         text-align: center;
         width: 50%;
         min-width: 34rem;
-        margin: 20rem auto 0 auto;
+        margin: 35rem auto 0 auto;
         border: 2px solid $color-grey-dark;
         border-radius: 2px;
         overflow: hidden;
 
         @include mq(medium, $custom: false){
             margin: 10rem auto 0 auto;
+        }
+        @include mq(phone, $custom: false){
+            min-width: 100%;
         }
 
         & h2 {
@@ -116,6 +119,7 @@
         &--heading{
             font-family: $font-heading;
             font-size: 2rem;
+            padding-top: 5rem;
 
             & h1 {
                 font-weight: 300;

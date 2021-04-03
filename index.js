@@ -15,6 +15,10 @@ var express = require('express'),
         res.sendFile(path.resolve(__dirname, "public/pages", "index.html"));
     });
 
+    app.get("/services", (req, res) => {
+        res.sendFile(path.resolve(__dirname, "public/pages", "services.html"));
+    })
+
 
 
     app.listen(PORT, () => {
