@@ -24,7 +24,7 @@
             rgba(#ff7730, 1));  
         }
         &--2{
-            background: linear-gradient(to right bottom, $color-primary-dark, $color-primary);
+            background: linear-gradient(to right bottom, $color-primary-light, $color-primary);
         }
         &--3{
             background: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary);
@@ -70,7 +70,7 @@
             }
             &-2{
                 background: linear-gradient(to right bottom, 
-                    rgba($color-primary-dark, .85),
+                    rgba($color-primary-light, .85),
                     rgba($color-primary, .85));
             }
             &-3{

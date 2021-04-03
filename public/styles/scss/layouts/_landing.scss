@@ -1,0 +1,86 @@
+.landing{
+    width: 95%;
+    position: relative;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-size: cover;
+    background-blend-mode: screen;
+    background-image: -webkit-gradient(linear, left top, right bottom, from($color-primary), to(#030303)),url(../../images/billboard_image.jpg);
+    color: $color-white;
+    font-family: $font-text;
+    &__cta{
+        background: linear-gradient(to right bottom, rgba($color-white, .85), rgba($color-grey-light, .85));
+        color: $color-grey-dark;
+        display: inline-block;
+        padding: 2rem;
+        // width: 45%;
+        // min-width: 50rem;
+        // display: flex;
+
+        &--btns{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.3rem;
+            margin: 12rem 0 0 17rem;
+
+            @include mq(medium, $custom: false){
+                margin: 4rem 0 0 2rem;
+            }
+            @include mq(phone, $custom: false){
+                gap: 3.3rem;
+                justify-content: center;
+                margin: 5rem 0 0 0;
+
+                &:last-of-type{
+                    padding-bottom: 13rem;
+                }
+            }
+        }
+    }
+    & h1{
+        font-size: 8rem;
+        min-width: 27rem;
+        max-width: 37rem;
+        padding-left: 2rem;
+        text-align: center;
+        background: linear-gradient(to right bottom, rgba($color-primary-light, .85), rgba($color-primary, .85));
+        @include mq(medium, $custom: false){
+            font-size: 6rem;
+        }
+        @include mq(small, $custom: false){
+            text-align: left;
+        }
+    }
+    
+    & h2 {
+        font-size: 3rem;
+        color: $color-primary;
+        background: white;
+        max-width: 37rem;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    & h3 {
+        font-size: 1.8rem;
+        font-family: $font-text;
+        font-weight: 300;
+        letter-spacing: 1px;
+        // padding: 2.75;
+        max-width: 60ch;
+        padding-left: 15rem;
+
+        @include mq(medium, $custom: false){
+            padding-left: 1rem;
+        }
+    }
+    
+        @include mq(small, $custom: false){
+            background-position: 40% 0%;
+        }
+
+        @include mq(phone, $custom: false){
+            background-position: 35% 0%;
+
+    }
+}

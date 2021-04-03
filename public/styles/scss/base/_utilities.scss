@@ -16,3 +16,15 @@
 .u-margin-top-large{
     margin-top: 8rem;
 }
+
+.u-padding-bottom-large{
+    padding-bottom: 6rem;
+}
+
+.u-phone-only{
+    display: none !important;
+
+    @include mq(phone, $custom: false){
+        display: flex !important;
+    }
+}

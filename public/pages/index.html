@@ -4,131 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chuck's Service Centre</title>
+    <title>Chuck's Auto Repair & Auto Sales</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,400;1,600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="../styles/css/index.css">
 </head>
 <body>
-    <header class="header flex">
-        <div class="company col-8">
-            <p class="company__name">
-                Chucks Service Centre
-            </p>
-        </div>
-        <nav class="col-4 nav">
-            <ul class="nav-list">
-                <div class="drop-down">
-                    <li class="nav-list__item drop-down__heading">
-                        Auto Services
-                    </li>
-                    <ul class="drop-down__sub-menu">
-                        <a href="/services"><li class="drop-down__sub-menu--item">Service Centre</li></a>
-                        <a href="/"><li class="drop-down__sub-menu--item">Safety Inspection</li></a>
-                        <a href="/"><li class="drop-down__sub-menu--item">Auto  Sales</li></a>
-                    </ul>
-                </div>
-                <a href="#history"><li class="nav-list__item">About Us</li></a>
-                <a href="#"><li class="nav-list__item">Contact Us</li></a>
-            </ul>
-            <div class="btn btn__toggle btn__toggle--nav">
-                <div class="hamburger u-opacity-1"></div>
+<header class="landing">
+            <h1>Chuck's Service Centre</h1>
+            <h2>Auto Repair & Sales</h2>
+            <div class="landing__cta">
+                <h3>Independently owned and operated Chuck's has provided the Hamilton area with <i>honest</i>, <i>quality</i> and <i>affordable</i> auto repairs and sales for over 45 years. .</h3>
             </div>
-        </nav>
-    </header>
-    <main class="content content__home">
-        <div class="announcement col-12">
-            <p class="announcement__message"> (your sales message) Eg: Book your Spring Tune up today! </p>
-        </div>
-        <div class="billboard">
-            <div class="billboard__image">
-                <div>
-                    <img src="../images/billboard_image-small.jpg" alt="">
-                </div>
-            </div>
-            <div class="billboard__content">
-                <div class="billboard__content--heading">
-                    <h1>Keeping Hamilton Rolling...</h1>
-                    <h2>Since 1974</h2>
-                </div>
-                <section class="billboard__highlight">
-                    <h3>
-                        Independently owned and operated for over 45 years Chuck's has provided
-                         the Hamilton area with honest, quality and affordable auto services.
-                    </h3>
-                </section>
-                <div class="billboard__highlight">
-                    <h3>
-                        With 6 bays, Emission Facility, state of the art Tire Installer and the latest Diagnostic Equipment, Chucks Auto is ready for all of your service and repair needs. 
-                    </h3>
-                </div>
-                <div class="billboard__highlight">
-                    <h3>
-                        With 6 bays, Emission Facility, state of the art Tire Installer and the latest Diagnostic Equipment, Chucks Auto is ready for all of your service and repair needs. 
-                    </h3>
-                </div>
-                <div class="billboard__cta">
-                    <div class="billboard__cta--heading">
-                        <h2>Is your vehicle not running well or needing a tune up?</h2>
-                        <h2>Does your car need an Inspection or Emissions Test?</h2>
-                        <h2>Looking to buy a new-to-you vehicle?</h2>
+            <div class="landing__cta--btns">
+                <a href="#">
+                    <div class="btn__main btn__main--icon">
+                        <svg class="icon__medium icon__white u-margin-right-small">
+                            <use href="../SVG/sprite.svg#icon-phone"></use>
+                        </svg>
+                        <p>Our Services</p>
                     </div>
-                    <h1>Call us today and be welcomed into our family of thousands who choose Chuck's First</h1>
-                    <h2></h2>
-                    <div class="billboard__cta--btns">
-                        <a href="#">
-                            <div class="btn__main btn__main--phone">
-                                <svg class="icon__medium icon__white u-margin-right-small">
-                                    <use href="../SVG/sprite.svg#icon-phone"></use>
-                                </svg>
-                                <p>Call Us</p>
-                            </div>
-                        </a>
+                </a>
+                <a href="tel:905-301-0465">
+                    <div class="btn__main btn__main--icon u-phone-only">
+                        <svg class="icon__medium icon__white u-margin-right-small">
+                            <use href="../SVG/sprite.svg#icon-phone"></use>
+                        </svg>
+                        <p>Call us</p>
                     </div>
-                </div>
+                </a>
             </div>
-
+            <a href="#benefits">
             <div class="btn__arrow--down">
-                <a href="#history">
                     <svg class="icon__arrow-down">
                         <use href="../SVG/sprite.svg#icon-arrow_down"></use>
                     </svg>
-                </a>
+                </div>
+            </a>
+    </header> 
+    <section class="benefits" id="benefits">
+        <div class="benefits__heading">
+            <h1 class="heading heading__primary heading--grey">Keeping Hamilton Rolling</h1>
+            <h2 class="heading heading__secondary heading--primary">. . . Since 1975</h2>
+        </div>
+        <div class="benefits__msg">
+            <p class="paragraph paragraph--grey">
+                Located at 804 King St E. Chuck's has been serving the Hamilton area since October 1974. In that time we've become experts at both auto repair and customer service.
+                We consider our customer satisifaction to be our greatest asset. To us that means the whole package. Great work and a great experience. To us, that's an expectation, not a goal.
+            </p>
+            <p class="paragraph paragraph--large paragraph--semi-bold paragraph--primary">
+                We think this is what keeps our loyal customers coming back. 
+            </p>
+        </div>
+        <div class="benefits__row">
+            <div class="benefits__card">
+                <div class="benefits__card--top">
+                    <h3>Our Advantage</h3>
+                    <div class="benefits__card--img">
+                        <svg>
+                            <use href="../SVG/sprite.svg#icon-money"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="benefits__card--bottom">
+                    <ul>
+                        <li>Often hundreds less than big name dealerships</li>
+                        <li>We do not needlessly replace or repair parts</li>
+                        <li>All Work Guaranteed</li>
+                        <!-- <li>All guaranteed work for Electrical Diagnostics, Tune-Ups, Brakes, Front End, Transmission Service, and Complete Repairs</li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="benefits__card">
+                <div class="benefits__card--top">
+                    <h3>Our Facilities</h3>
+                    <div class="benefits__card--img">
+                        <svg>
+                            <use href="../SVG/sprite.svg#icon-garage"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="benefits__card--bottom">
+                    <ul>
+                        <li>4 Service Bays</li>
+                        <li>Certified Emission Testing </li>
+                        <li>State of the Art Tire Installer</li>
+                        <li>Latest Diagnostic Equipment</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="benefits__card">
+                <div class="benefits__card--top">
+                    <h3>Our Experience</h3>
+                    <div class="benefits__card--img">
+                        <svg class="icon__certificate" style="height: 5em; width: 5em; fill: red;">
+                            <use href="../SVG/sprite.svg#icon-person_outline"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="benefits__card--bottom">
+                    <ul>
+                        <li>Top Customer Service</li>
+                        <li>Motor Vehicle Inspection Station</li>
+                        <li>Transparent pricing</li>
+                        <li>Quick Repair and Maintenance Turn Around</li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <section class="history">
-            <h1  id="history" class="col-12">About Us</h1>
-            <div class="history__image">
-                <img src="../images/chuck_temp.jpg" alt="Charles Matteliano" >
-                <h3 class="u-center-text"><i>Charles Matteliano</i></h3>
-            </div>
-            <div class="history__content">
-                <p>
-                    Chuck's was founded in October 1974 by Charles Matteliano and is presently owned and operated by his song, Eddie Matteliano.
-                </p>
-                <p>
-                    In our 45 years in Hamilton we have called a few places home. In 2007 we moved from our last location on Main St. & Blake St. to our current location 804 King St. E Hamilton, Ontario.
-                </p>
-                <p>
-                    Showing our dedication to our community and being able to give back is a storied tradition a Chuck's.
-                    We are proud to haved served and continue to serve our community by providing great, affordable service and sponsoring sports teams and community events. 
-                </p>
-                <p>
-                    At Chuck's customer satisfaction is our greatest asset and we go to great length to keep you driving safely and coming back to us for all your service needs.
-                </p>
-                <p>
-                    So if your car is acting up, or not sounding right - bring it in and we will be happy to "look under the hood" for you.
-                </p>
-            </div>
-            <div class="history__btn col-12">
-                <a href="/services">
-                    <div class="btn__main u-margin-top-large">
-                        <p>Check out the services we offer.</p>
-                    </div>
-                </a>
-            </div>
-        </section>
-    </main>
+        <div class="benefits__cta">
+            <p class="u-padding-bottom-large">Looking to perform regular maintenance, repair or replace your current vehicle?</p>
+            <p>Drop by <span>804 King St.E Hamilton</span></p>
+            <p> or call us at <span>(905)545-8244</span></p>
+            <!-- <p>If your car is acting up, or not sounding right don't hesitate to bring it in and we'll be happy to "look under the hood".</p> -->
+            <!-- <p>Call us today to book a  </p> -->
+            <!-- <p>So, if you think your car doesn't sound right, or isn't running well. Give us a call and let us take a look at it.</p> -->
+        </div>
+    </section>
     <footer class="footer">
         <div class="footer__location">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5812.114380142001!2d-79.8441927!3d43.2502232!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c9befb43e77a1%3A0x1d62faa63bbbb559!2sChucks%20Service%20Centre!5e0!3m2!1sen!2sca!4v1617049931710!5m2!1sen!2sca" width="250" height="200" style="border:0;" allowfullscreen="true"></iframe>
@@ -165,6 +157,8 @@
             <p class="footer__contact--item"><span>Email:</span> contact@chucksservicecentre.com</p>
         </div>
     </footer>
-    <script src="../scripts/index.js"></script>
 </body>
 </html>
+
+<!-- attributions -->
+<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->

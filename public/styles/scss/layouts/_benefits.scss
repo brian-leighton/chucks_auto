@@ -1,0 +1,130 @@
+.benefits{
+    min-height: 100vh;
+    width: 95vw;
+    background: $color-grey-light;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10rem;
+
+    //card container
+    &__row{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        background: $color-grey-dark;
+        padding: 8rem 2rem;
+        @include mq(medium, $custom: false){
+            gap: 3rem 0;
+            padding: 4rem 2rem;
+        }
+    }
+
+    &__msg{
+        max-width: 105ch;
+        // background: red;
+        margin: 4rem auto 12rem auto;
+
+        & p:last-of-type{
+            padding-top: 8rem;
+        }
+        @include mq(small, $custom: false){
+            margin: 4rem auto 8rem auto;
+        }
+    }
+
+    &__cta{
+        position: relative;
+        min-height: 45vh;
+        background: $color-grey-light;
+        padding: 35rem 0 25rem 0;
+        text-align: left;
+
+        & p {
+            font-size: 2.8rem;
+            font-family: $font-heading;
+            // letter-spacing: 1px;
+            font-weight: 300;
+            // background: yellow;
+            max-width: 55ch;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 3.5rem;
+            // background: yellow;
+            // padding: .75rem;
+        }
+        
+        & span {
+            color: $color-primary;
+            font-weight: 500;
+        }
+    
+        &::after{
+            content:"";
+            width: 100%;
+            min-height: 23rem;
+            position: absolute;
+            background: $color-grey-dark;
+            clip-path: polygon(0 0, 100% 0, 100% 55%, 0 100%);
+            left: 0;
+            top: 0;
+        }
+    }
+
+    &__card{
+        background: white;
+        padding: 1.5rem 3.5rem;
+        flex: 0 0 30%;
+        min-width: 31rem;
+        max-width: 37rem;
+        border-radius: 2px;
+
+        &--top{
+            & h3{
+                font-family: $font-heading;
+                font-size: 2.2rem;
+                color: $color-grey-dark;
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+        }
+        &--bottom{
+            padding: 5rem 0;
+
+            & ul {
+                // background: blue;
+                // display: flex;
+                // justify-content: flex-end;
+                // flex-wrap: wrap;
+                font-family: $font-text;
+            }
+
+            &  li {
+                font-size: 1.4rem;
+                padding: .8rem 0;
+                color: $color-grey-dark;
+                border-bottom: 2px solid $color-grey-light;
+                text-transform: capitalize;
+                // background: red;
+                // flex: 0 0 75%;
+                text-align: center;
+            }
+        }
+
+        &--img{
+            background: $color-grey-light;
+            display: inline-block;
+            padding: 2rem;
+            margin-top: 2.5rem;
+            border-radius: 50%;
+            box-shadow: .3rem .3rem .5rem 0 $color-grey-dark;
+            // width: 6em;
+            // height: 6em;
+        }
+
+        & svg { 
+            height: 5em;
+            width: 5em;
+            fill: $color-primary;
+        }
+    }
+}

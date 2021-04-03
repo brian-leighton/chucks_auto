@@ -1,0 +1,43 @@
+.heading{
+    font-family: $font-text;
+
+    &__primary{
+        font-size: 3.2rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    &__secondary{
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    &--primary{
+        color: $color-primary;
+    }
+    &--grey{
+        color: $color-grey-dark;
+    }
+}
+p{
+    font-family: $font-text;
+}
+.paragraph{
+    font-family: $font-text;
+    font-weight: 300;
+    font-size: 1.7rem;
+
+    &--primary{
+        color: $color-primary;
+    }
+
+    &--grey{
+        color:$color-grey-dark;
+    }
+    &--large{
+        font-size: 2.4rem;
+    }
+    &--semi-bold{
+        font-weight: 500;
+    }
+}
