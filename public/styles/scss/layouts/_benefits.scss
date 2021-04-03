@@ -6,6 +6,10 @@
     text-align: center;
     padding-top: 10rem;
 
+    @include mq(small, $custom: false){
+        padding-top: 5rem;
+    }
+
     //card container
     &__row{
         display: flex;
@@ -21,7 +25,6 @@
 
     &__msg{
         max-width: 105ch;
-        // background: red;
         margin: 4rem auto 12rem auto;
 
         & p:last-of-type{
@@ -42,15 +45,12 @@
         & p {
             font-size: 2.8rem;
             font-family: $font-heading;
-            // letter-spacing: 1px;
             font-weight: 300;
-            // background: yellow;
             max-width: 55ch;
             margin: 0 auto;
             text-align: center;
             line-height: 3.5rem;
-            // background: yellow;
-            // padding: .75rem;
+
         }
         
         & span {
@@ -91,10 +91,6 @@
             padding: 5rem 0;
 
             & ul {
-                // background: blue;
-                // display: flex;
-                // justify-content: flex-end;
-                // flex-wrap: wrap;
                 font-family: $font-text;
             }
 
@@ -104,8 +100,6 @@
                 color: $color-grey-dark;
                 border-bottom: 2px solid $color-grey-light;
                 text-transform: capitalize;
-                // background: red;
-                // flex: 0 0 75%;
                 text-align: center;
             }
         }

@@ -134,19 +134,9 @@ p {
   padding: 1rem 2rem;
   border-radius: 3px;
   color: #fff6f3;
-  background: #006ef7;
   cursor: pointer;
   transition: all 0.3s ease-in;
   border: 2px solid transparent;
-}
-.btn__main:hover {
-  background: #bfd4f4;
-  color: #006ef7;
-  border: 2px solid #006ef7;
-}
-.btn__main:hover svg {
-  fill: #006ef7;
-  transition: fill 1s ease-out;
 }
 .btn__main--icon > p {
   padding-top: 0.5rem;
@@ -163,6 +153,30 @@ p {
   z-index: 1200;
   display: flex;
   justify-content: center;
+}
+.btn--blue {
+  background: #006ef7;
+}
+.btn--blue:hover {
+  background: #bfd4f4;
+  color: #006ef7;
+  border: 2px solid #006ef7;
+}
+.btn--blue:hover svg {
+  fill: #006ef7;
+  transition: fill 1s ease-out;
+}
+.btn--red {
+  background: #e91212;
+}
+.btn--red:hover {
+  background: #fcd4d1;
+  color: #e91212;
+  border: 2px solid #e91212;
+}
+.btn--red:hover svg {
+  fill: #e91212;
+  transition: fill 1s ease-out;
 }
 
 .card {
@@ -524,6 +538,11 @@ div.company, .company {
   margin: 0 auto;
   text-align: center;
   padding-top: 10rem;
+}
+@media (max-width: 40em) {
+  .benefits {
+    padding-top: 5rem;
+  }
 }
 .benefits__row {
   display: flex;

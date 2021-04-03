@@ -4,22 +4,9 @@
         padding: 1rem 2rem;
         border-radius: 3px;
         color: $color-white;
-        background: $color-tertiary;
         cursor: pointer;
         transition: all .3s ease-in;
         border: 2px solid transparent;
-
-        &:hover{
-            background: mix($color-white, $color-tertiary, 75%);
-            color: $color-tertiary;
-            border: 2px solid $color-tertiary;
-
-            & svg {
-                fill: $color-tertiary;
-                transition: fill 1s ease-out;
-            }
-
-        }
 
         &--icon{
             & > p {
@@ -45,6 +32,38 @@
             z-index:1200;
             display: flex;
             justify-content: center;
+        }
+    }
+
+    &--blue{
+        background: $color-tertiary;
+
+        &:hover{
+            background: mix($color-white, $color-tertiary, 75%);
+            color: $color-tertiary;
+            border: 2px solid $color-tertiary;
+
+            & svg {
+                fill: $color-tertiary;
+                transition: fill 1s ease-out;
+            }
+
+        }
+    }
+
+    &--red{
+        background: $color-primary;
+
+        &:hover{
+            background: mix($color-white, $color-primary, 85%);
+            color: $color-primary;
+            border: 2px solid $color-primary;
+
+            & svg {
+                fill: $color-primary;
+                transition: fill 1s ease-out;
+            }
+
         }
     }
 }
