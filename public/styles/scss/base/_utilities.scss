@@ -6,8 +6,20 @@
 .u-font-white{
     color: $color-white !important;
 }
+.u-font-family-heading{
+    font-family: $font-heading;
+}
+.u-font-family-text{
+    font-family: $font-text;
+}
 .u-font-primary{
     color: $color-primary;
+}
+.u-font-uppercase{
+    text-transform: uppercase;
+}
+.u-font-center{
+    text-align: center;
 }
 .u-margin-right-small{
     margin-right: 1.5rem;
@@ -19,6 +31,10 @@
 
 .u-padding-bottom-large{
     padding-bottom: 6rem;
+}
+
+.u-width-45ch{
+    max-width: 45ch;
 }
 
 .u-phone-only{

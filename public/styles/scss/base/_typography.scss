@@ -12,6 +12,12 @@
         font-weight: 300;
     }
 
+    &__tertiary{
+        font-size: 1.8rem;
+        font-weight: 400;
+        // font-family: ;
+    }
+
     &--primary{
         color: $color-primary;
     }

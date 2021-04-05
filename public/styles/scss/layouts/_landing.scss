@@ -2,7 +2,8 @@
     width: 95%;
     position: relative;
     margin: 0 auto;
-    min-height: 100vh;
+    height: 100%;
+    min-height: 95rem;
     background-size: cover;
     background-blend-mode: screen;
     background-image: -webkit-gradient(linear, left top, right bottom, from($color-primary), to(#030303)),url(../../images/billboard_image.jpg);
@@ -13,9 +14,6 @@
         color: $color-grey-dark;
         display: inline-block;
         padding: 2rem;
-        // width: 45%;
-        // min-width: 50rem;
-        // display: flex;
 
         &--btns{
             display: flex;
@@ -24,7 +22,12 @@
             margin: 12rem 0 0 17rem;
 
             @include mq(medium, $custom: false){
-                margin: 4rem 0 0 2rem;
+                margin: 6rem 0 0 2rem;
+                justify-content: center;
+
+                &:last-of-type{
+                    padding-bottom: 2rem;
+                }
             }
             @include mq(phone, $custom: false){
                 gap: 3.3rem;
@@ -32,7 +35,7 @@
                 margin: 5rem 0 0 0;
 
                 &:last-of-type{
-                    padding-bottom: 13rem;
+                    padding-bottom: 16rem;
                 }
             }
         }
@@ -66,7 +69,6 @@
         font-family: $font-text;
         font-weight: 300;
         letter-spacing: 1px;
-        // padding: 2.75;
         max-width: 60ch;
         padding-left: 15rem;
 

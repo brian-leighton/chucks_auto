@@ -46,16 +46,32 @@ nav{
         text-transform: uppercase;
         padding-bottom: .5rem;
         position: relative;
+        transform: perspective(1px) translateZ(0);
+        display: inline-block;
 
         &::after{
             content: "";
             position: absolute;
-            width: 120%;
-            height: 3px;
-            background: $color-tertiary;
+            left: 51%;
+            right: 51%;
+            height: 4px;
+            background: $color-secondary;
             z-index: 100;
-            left: -10%;
             bottom:-3px;
+            transition-property: left, right;
+            transition-duration: 0.3s;
+            box-shadow: 0 .25rem .5rem 0 mix($color-white, $color-grey-dark, 15%);
+            @include mq(phone, $custom: false){
+                left: -2rem;
+                right: -2rem;
+                box-shadow: none;
+            }
+        }
+        
+        &:hover::after{
+            // height: 4px;
+            left: -2rem;
+            right: -2rem;
         }
 
         @include mq(phone, $custom: false){
@@ -151,7 +167,7 @@ nav{
     position: fixed;
     top: 0;
     z-index: 1500;
-    & > ul {
+    & > div:first-of-type{
         border-radius: 50%;
         width: 200vw;
         height: 133vh;
@@ -165,7 +181,7 @@ nav{
         transition: height 1.2s ease, width 1.2s ease;
 
         @include mq(phone, $custom: false){
-            background: $color-grey-dark;
+            background: $color-grey-light;
         }
     }
 }

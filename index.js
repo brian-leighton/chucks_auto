@@ -17,9 +17,19 @@ var express = require('express'),
 
     app.get("/services", (req, res) => {
         res.sendFile(path.resolve(__dirname, "public/pages", "services.html"));
-    })
+    });
 
+    app.get("/about", (req, res) => {
+        res.sendFile(path.resolve(__dirname, "public/pages", "about.html"));
+    });
 
+    app.get("/sales", (req, res) => {
+        res.sendFile(path.resolve(__dirname, "public/pages", "about.html"));
+    });
+
+    app.get("/contact", (req, res) => {
+        res.sendFile(path.resolve(__dirname, "public/pages", "contact.html"));
+    });
 
     app.listen(PORT, () => {
         console.log(`Server @ ${PORT}`);

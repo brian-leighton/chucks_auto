@@ -1,0 +1,78 @@
+.contact{
+    width: 95%;
+    background: $color-grey-light;
+    color: $color-grey-dark;
+    margin: 0 auto;
+
+    h1,h2,h3{
+        font-family: $font-heading;
+    } 
+    & li {
+        font-size: 1.6rem;
+        padding: .38rem 0;
+        letter-spacing: 1px;
+    }
+    h1{
+        margin: 0 auto;
+        text-align: center;
+        &:first-of-type{
+            padding: 5rem 0;
+        }
+    }
+    h2{
+        font-size: 2.8rem;
+    }
+
+    &__content{
+        // background: green;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15rem 0;
+        
+        @include mq("900px", $custom: true){
+            gap: 3.5rem 10rem;
+        }
+    }
+
+    &__connection{
+        flex: 1 0 100%;
+        text-align: center;
+    }
+
+    &__location{
+        padding-right: 25rem;
+
+        @include mq("900px", $custom: true){
+            padding-right: 0;
+        }
+        @include mq(small, $custom: false){
+            text-align: center;
+        }
+    }
+
+    &__map{
+        max-width: 35rem;
+
+        @include mq("900px", $custom: true){
+            padding: 3.5rem 0;
+        }
+    }
+
+    &__hours{
+        & span{
+            font-weight: 400;
+        }
+        & li {
+            font-weight: 700;
+        }
+    }
+
+    &__cta{
+        padding: 15rem 0 25rem 0;
+        @include mq(phone, $custom: false){
+            padding: 10rem 0 15rem 0;
+        }
+    }
+
+}

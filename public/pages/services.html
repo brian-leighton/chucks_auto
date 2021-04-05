@@ -12,25 +12,16 @@
 <body>
     <header class="header flex">
         <div class="company col-8">
-            <p class="company__name">
+            <a href="/" class="company__name">
                 Chucks Service Centre
-            </p>
+            </a>
         </div>
         <nav class="col-4 nav">
-            <ul class="nav-list">
-                <div class="drop-down">
-                    <li class="nav-list__item drop-down__heading">
-                        Auto Services
-                    </li>
-                    <ul class="drop-down__sub-menu">
-                        <a href="/"><li class="drop-down__sub-menu--item">Auto Repair</li></a>
-                        <a href="/"><li class="drop-down__sub-menu--item">Safety Inspection</li></a>
-                        <a href="/"><li class="drop-down__sub-menu--item">Auto  Sales</li></a>
-                    </ul>
-                </div>
-                <a href="#history"><li class="nav-list__item">About Us</li></a>
-                <a href="#"><li class="nav-list__item">Contact Us</li></a>
-            </ul>
+            <div class="nav-list">
+                <a href="/sales" class="nav-list__item">Auto Sales</a>
+                <a href="/about"><li class="nav-list__item">About Us</li></a>
+                <a href="/contact"><li class="nav-list__item">Contact Us</li></a>
+            </div>
             <div class="btn btn__toggle btn__toggle--nav">
                 <div class="hamburger u-opacity-1"></div>
             </div>
@@ -40,11 +31,11 @@
     <div class="content">
         <div class="content__services--heading">
             <h1>Auto Service & Maintenance</h1>
-            <h2 class="u-font-primary">See why our service is above the rest!</h2>
-            <h4>Is your car not running right?</h4>
+            <h2 class="u-font-family-text u-font-primary">See why our service is above the rest!</h2>
+            <h4 class="heading heading__primary u-font-center">Is your car not running right?</h4>
             <p>Chuck's offers premium automotive repair at down to earth prices. If you are a savvy customer and demand real value for your hard-earned dollar, you need not look any farther.</p>
             <p>While the quality of our work and service is as good or better than that of big name dealerships. Often you'll find our prices are several hundred dollars lower than theirs. We can offer these great prices because we do not repair or replace components needlessly or without your consent.</p>
-            <h3>Take a look at what services we offer. <sub>*pricing <i>may</i> vary based on vehicle make and model</sub> </h3>
+            <h3 class="heading">Take a look at what services we offer. <sub>*pricing <i>may</i> vary based on vehicle make and model</sub> </h3>
         </div>
         <div class="content__services">
             <div class="card__row">
